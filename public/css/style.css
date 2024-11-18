@@ -1,0 +1,94 @@
+/* Estilo base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Main */
+main {
+    margin: 20px 0;
+}
+
+main p {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: 1em;
+}
+
+thead {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #e0f7e8;
+}
+
+/* Footer */
+footer {
+    background-color: blue;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #f2f2f2;
+}
+
+/* Estilo de Alerta e Efeito de Animação */
+.alerta {
+    background-color: #ffeb3b;
+    color: #333;
+    padding: 10px;
+    border: 2px solid #ff9800;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    animation: alertaBrilho 1.5s ease-in-out infinite alternate;
+}
+
+/* Animação de Brilho */
+@keyframes alertaBrilho {
+    0% {
+        background-color: #ffeb3b;
+        box-shadow: 0 0 5px #ff9800, 0 0 15px #ff9800;
+    }
+    100% {
+        background-color: #fff176;
+        box-shadow: 0 0 10px #ff5722, 0 0 25px #ff5722;
+    }
+}
