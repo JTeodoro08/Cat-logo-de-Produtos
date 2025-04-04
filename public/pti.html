@@ -1,100 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catálogo de Produtos - JTA Eletro</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <h1>JTA Eletro - Catálogo de Produtos</h1>
+        <nav>
+            <ul>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <p class="alerta">Bem-vindo ao catálogo de produtos da JTA Eletro! Aqui você encontra nossos principais itens.</p>
+        <section id="produtos">
+            <p class="alerta">Bem-vindo ao catálogo de produtos da JTA Eletro! Aqui você encontra nossos principais itens.</p>
 
-        <table>
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Nome</th>
-                    <th>Marca</th>
-                    <th>Preço (R$)</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Geladeira</td>
-                    <td>Consul</td>
-                    <td>4590,00</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>SmartTV</td>
-                    <td>LG</td>
-                    <td>3500,00</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Celular</td>
-                    <td>Samsung</td>
-                    <td>1800,00</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>Impressora</td>
-                    <td>Epson</td>
-                    <td>2290,00</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>Ventilador</td>
-                    <td>Arno</td>
-                    <td>290,00</td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td>Tablet</td>
-                    <td>Xiaomi</td>
-                    <td>2170,00</td>
-                </tr>
-                <tr>
-                    <td>7</td>
-                    <td>Fogão</td>
-                    <td>Atlas</td>
-                    <td>1590,00</td>
-                </tr>
-                <tr>
-                    <td>8</td>
-                    <td>Iphone 15</td>
-                    <td>Apple</td>
-                    <td>6879,00</td>
-                </tr>
-                <tr>
-                    <td>9</td>
-                    <td>Computador</td>
-                    <td>Dell</td>
-                    <td>4280,00</td>
-                </tr>
-                <tr>
-                    <td>10</td>
-                    <td>TV 4K</td>
-                    <td>Sony</td>
-                    <td>5290,00</td>
-                </tr>
-            </tbody>
-        </table>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Marca</th>
+                        <th scope="col">Preço (R$)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Geladeira</td>
+                        <td>Consul</td>
+                        <td>4590,00</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>SmartTV</td>
+                        <td>LG</td>
+                        <td>3500,00</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Celular</td>
+                        <td>Samsung</td>
+                        <td>1800,00</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Impressora</td>
+                        <td>Epson</td>
+                        <td>2290,00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contato">
+            <h2>Entre em Contato</h2>
+            <form>
+                <input type="text" placeholder="Seu Nome" required aria-label="Nome">
+                <input type="email" placeholder="Seu E-mail" required aria-label="E-mail">
+                <textarea placeholder="Sua Mensagem" required aria-label="Mensagem"></textarea>
+                <button type="submit" aria-label="Enviar formulário de contato">Enviar</button>
+            </form>
+        </section>
+
+        <section id="sobre">
+            <h2>Sobre Nós</h2>
+            <p>Na JTA Eletro, acreditamos em proporcionar qualidade e inovação para nossos clientes. Explore nosso catálogo e entre em contato para saber mais!</p>
+        </section>
     </main>
 
     <footer>
-        <p>2024 - JTA Eletro</p>
+        <p>&copy; 2024 JTA Eletro</p>
     </footer>
 
+    <script src="./js/script.js"></script>
+
 </body>
+
 </html>
 
 

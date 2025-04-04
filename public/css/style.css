@@ -1,33 +1,57 @@
-/* Estilo base */
-* {
+/* Configuração global */
+body {
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    background: linear-gradient(to right, #f9f9f9, #dfe3e6);
     color: #333;
-    padding: 20px;
 }
 
 /* Header */
 header {
     background-color: #4CAF50;
-    color: #fff;
-    padding: 20px 0;
+    color: white;
+    padding: 20px;
     text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Main */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffdd57;
+}
+
+/* Conteúdo principal */
 main {
-    margin: 20px 0;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
 }
 
-main p {
+/* Alerta */
+.alerta {
+    background-color: #FFEB3B;
+    padding: 10px;
+    border-radius: 5px;
     margin-bottom: 20px;
-    font-size: 1.1em;
+    text-align: center;
 }
 
 /* Tabela */
@@ -35,60 +59,74 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
-    font-size: 1em;
-}
-
-thead {
-    background-color: #4CAF50;
-    color: #fff;
 }
 
 th, td {
-    border: 1px solid #ddd;
     padding: 10px;
     text-align: center;
+    border: 1px solid #ddd;
 }
 
-tbody tr:nth-child(even) {
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 
-tbody tr:hover {
-    background-color: #e0f7e8;
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    margin: auto;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #ffdd57;
+    transform: scale(1.05);
 }
 
 /* Footer */
 footer {
-    background-color: blue;
+    background-color: #333;
+    color: white;
     text-align: center;
-    padding: 20px;
-    margin-top: 20px;
-    font-size: 1.2em;
-    color: #f2f2f2;
-}
-
-/* Estilo de Alerta e Efeito de Animação */
-.alerta {
-    background-color: #ffeb3b;
-    color: #333;
     padding: 10px;
-    border: 2px solid #ff9800;
-    border-radius: 5px;
-    font-size: 1.2em;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 20px;
-    animation: alertaBrilho 1.5s ease-in-out infinite alternate;
 }
 
-/* Animação de Brilho */
-@keyframes alertaBrilho {
-    0% {
-        background-color: #ffeb3b;
-        box-shadow: 0 0 5px #ff9800, 0 0 15px #ff9800;
+/* Responsividade */
+@media (max-width: 768px) {
+    table {
+        display: block;
+        overflow-x: auto;
     }
-    100% {
-        background-color: #fff176;
-        box-shadow: 0 0 10px #ff5722, 0 0 25px #ff5722;
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form {
+        width: 90%;
     }
 }
